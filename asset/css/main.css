@@ -390,12 +390,38 @@
 .search__cart{
     width: 140px;
     text-align: center;
+    position: relative;
 }
+
 .search__cart-icon{
     color: var(--white-color);
     font-size: 2.6rem;
-    
 }
+
+.cart-list{
+    position: absolute;
+    top: calc(100% + 9px);
+    right: 42px;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius:2px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0,0,0,0.25);
+}
+
+.cart-list--no-cart{
+    padding: 28px 0;
+}
+
+.cart-list--no-cart-img{
+    width: 50%;
+}
+
+.cart-list--no-cart-msg{
+    display:block;
+    font-size:1.4rem;
+    margin-top: 16px;
+}
+
 .search__option{
     position: absolute;
     padding: 8px 0 0 0;
